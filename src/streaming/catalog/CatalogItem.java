@@ -1,4 +1,5 @@
 package streaming.catalog;
 
-public class CatalogItem {
+public interface CatalogItem {
+    void accept(CatalogVisitor visitor);
 }
